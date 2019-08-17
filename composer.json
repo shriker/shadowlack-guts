@@ -1,0 +1,43 @@
+{
+  "name": "shriker/shadowlack-guts",
+  "description": "Core rules, policies, and pages for the Shadowlack RPG.",
+  "homepage": "https://shadowlack.com/",
+  "license": "CC BY-NC-SA 4.0",
+  "keywords": [
+    "shadowlack",
+    "roleplaying",
+    "rpg",
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "require": {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+  "authors": [
+    {
+      "name": "Jodie Struthers",
+      "homepage": "https://shriker.ca",
+      "role": "Developer"
+    },
+    {
+      "name": "Shadowlack Community",
+      "homepage": "https://shadowlack.com",
+      "role": "Content Contributors 💖"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Shriker\\ShadowlackGuts\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Shadowlack Guts",
+      "icon": {
+        "name": "fas fa-book-dead",
+        "backgroundColor": "#e91e63",
+        "color": "#03edf9"
+      }
+    }
+  }
+}
