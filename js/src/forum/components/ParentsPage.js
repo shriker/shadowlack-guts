@@ -11,6 +11,7 @@ export default class ParentsPage extends Page {
 
     app.history.push('parents', 'For Parents');
     app.setTitle('For Parents');
+    $('meta[name=description]').attr('content', 'A Message for Parents, Guardians, and Teachers.');
 
     return (
       <div className="Pages">

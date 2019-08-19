@@ -11,6 +11,7 @@ export default class AboutPage extends Page {
 
     app.history.push('about', 'About');
     app.setTitle('About');
+    $('meta[name=description]').attr('content', 'This section of the site is dedicated to getting you acquainted with the realm of Shadowlack.');
 
     return (
       <div className="Pages">
@@ -24,7 +25,7 @@ export default class AboutPage extends Page {
 
               <h1>About</h1>
 
-              <img src="https://shadowlack.com/images/bunglebearz-cayson.png" alt="Cayson" width="250" style="float:right;margin: 0 0 16px 16px" />
+              <img src="https://shadowlack.com/images/bunglebearz-cayson.png" alt="Cayson" width="250" height="203" style="float:right;margin: 0 0 16px 16px" />
 
               <p>
                 Shadowlack is a free dice-less <b>Play-by-Post</b> game as well an ongoing <b>World-Building Project</b>. When you join, you become an author in our collaborative story. You get to make up your own characters, select their race, trades, and write up descriptions for them. Then you start writing and other authors will join in, adding their own characters and help in developing the plot. Eventually you have a small piece of a story. Shadowlack is a collection of many story pieces written by many authors who have made up many characters. In short, Shadowlack is simply an continuous collaborative story.
@@ -55,7 +56,7 @@ export default class AboutPage extends Page {
 
               <h2>LGBTQ+ Inclusive Safer Space</h2>
               <p>
-                Shadowlack has a proven track record of being a safer space for LGBTQ+ individuals. This is one of our core values. We also have an <a href="/anti-harassment-policy/">Anti-Harassment Policy</a> that we strictly follow and enforce.
+                Shadowlack has a proven track record of being a safer space for LGBTQ+ individuals. This is one of our core values. We also have an <a href="/anti-harassment-policy">Anti-Harassment Policy</a> that we strictly follow and enforce.
               </p>
 
               <h2>Interested in Joining?</h2>
@@ -69,7 +70,7 @@ export default class AboutPage extends Page {
                 Or perhaps you just wish to learn more about Shadowlack and its inhabitants before you go ahead and create a character to throw into the fray. Whatever your reasoning, Shadowlack has a designated <em>Lurker</em> member group. Those in the Lurker member group are granted the privilege to post in all of the Out of Character sections on our forums. You can then contribute to Out of Character discussions and matters that relate to game development&#8230; or just lurk.
               </p>
 
-              </article>
+            </article>
           </div>
         </div>
       </div>

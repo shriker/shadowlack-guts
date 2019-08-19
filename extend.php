@@ -22,5 +22,9 @@ return [
         ->route('/anti-harassment-policy', 'shadowlack.anti-harassment-policy')
         ->route('/parents', 'shadowlack.parents')
         ->route('/rating', 'shadowlack.rating')
-        ->route('/staff-handbook', 'shadowlack.staff-handbook'),
+        ->route('/staff-handbook', 'shadowlack.staff-handbook')
+        ->route('/privacy', 'shadowlack.privacy')
+        ->route('/legal', 'shadowlack.legal')
+        ->route('/codex/scenario', 'shadowlack.codex.scenario')
+        ->route('/codex/random-name-generator', 'shadowlack.codex.name'),
 ];

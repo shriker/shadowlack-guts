@@ -10,6 +10,7 @@ export default class AntiHPage extends Page {
   view() {
     app.history.push('anti-harassment-policy', 'Anti-Harassment Policy');
     app.setTitle('Anti-Harassment Policy');
+    $('meta[name=description]').attr('content', 'Shadowlack is dedicated to having a harassment-free roleplaying experience for everyone.');
 
     return (
       <div className="Pages">

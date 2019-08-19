@@ -1,14 +1,18 @@
-
-import { extend } from 'flarum/extend';
-import IndexPage from 'flarum/components/IndexPage';
 import HeaderPrimary from 'flarum/components/HeaderPrimary';
-import Separator from 'flarum/components/Separator';
+import IndexPage from 'flarum/components/IndexPage';
 import LinkButton from 'flarum/components/LinkButton';
-
-import AntiHPage from './components/AntiHPage';
+import { extend } from 'flarum/extend';
 import AboutPage from './components/AboutPage';
-import RulesPage from './components/RulesPage';
+import AntiHPage from './components/AntiHPage';
+import CodexGenName from './components/CodexGenName';
+import CodexGenScenario from './components/CodexGenScenario';
+import ShadowIndexPage from './components/extShadowIndexPage';
+import LegalPage from './components/LegalPage';
 import ParentsPage from './components/ParentsPage';
+import PrivacyPage from './components/PrivacyPage';
+import RatingPage from './components/RatingPage';
+import RulesPage from './components/RulesPage';
+import StaffHandbookPage from './components/StaffHandbookPage';
 
 /**
  * Extend top primary navigation
@@ -45,9 +49,12 @@ extend(IndexPage.prototype, 'navItems', function(items) {
         children: 'For Parents',
         href: app.route('parents'),
     }));
+    items.add('staff-handbook', LinkButton.component({
+        parent: 'about',
+        children: 'Staff Handbook',
+        href: app.route('staff'),
+    }));
   // }
-
-  console.log(items);
 
 });
 
@@ -55,8 +62,16 @@ extend(IndexPage.prototype, 'navItems', function(items) {
  * Initialize custom pages with their routes
  */
 app.initializers.add('shriker/shadowlack-guts', () => {
+  ShadowIndexPage();
   app.routes.about = {path: '/about', component: AboutPage.component()};
   app.routes.rules = {path: '/rules', component: RulesPage.component()};
   app.routes.antih = {path: '/anti-harassment-policy', component: AntiHPage.component()};
   app.routes.parents = {path: '/parents', component: ParentsPage.component()};
+  app.routes.rating = {path: '/rating', component: RatingPage.component()};
+  app.routes.staff = {path: '/staff-handbook', component: StaffHandbookPage.component()};
+  app.routes.privacy = {path: '/privacy', component: PrivacyPage.component()};
+  app.routes.legal = {path: '/legal', component: LegalPage.component()};
+
+  app.routes.codexscenario = {path: '/codex/scenario', component: CodexGenScenario.component()};
+  app.routes.codexname = {path: '/codex/random-name-generator', component: CodexGenName.component()};
 });
