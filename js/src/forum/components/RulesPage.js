@@ -10,7 +10,7 @@ export default class RulesPage extends Page {
   view() {
 
     app.history.push('rules', 'Rules & Regulations');
-    app.setTitle('Rules & Regulation');
+    app.setTitle('Rules & Regulations');
 
     return (
       <div className="Pages">
@@ -22,7 +22,7 @@ export default class RulesPage extends Page {
             </nav>
             <article className="Pages-content IndexPage-results sideNavOffset">
 
-              <h1>Rules & Regulation</h1>
+              <h1>Rules & Regulations</h1>
 
               <h2>Age</h2>
               <p>It is <em>highly recommended</em> that you are thirteen years old or older to join this site, or have your parent's consent. Are you under thirteen and still wish to join? Please have your parents read our <a href="/parents">Message for Parents and Teachers</a> and see what they have to say.</p>

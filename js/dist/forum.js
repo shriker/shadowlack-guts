@@ -733,7 +733,7 @@ function (_Page) {
 
   _proto.view = function view() {
     app.history.push('rules', 'Rules & Regulations');
-    app.setTitle('Rules & Regulation');
+    app.setTitle('Rules & Regulations');
     return m("div", {
       className: "Pages"
     }, flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype.hero(), m("div", {
@@ -745,7 +745,7 @@ function (_Page) {
       config: flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype.affixSidebar
     }, m("ul", null, flarum_helpers_listItems__WEBPACK_IMPORTED_MODULE_3___default()(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype.sidebarItems().toArray()))), m("article", {
       className: "Pages-content IndexPage-results sideNavOffset"
-    }, m("h1", null, "Rules & Regulation"), m("h2", null, "Age"), m("p", null, "It is ", m("em", null, "highly recommended"), " that you are thirteen years old or older to join this site, or have your parent's consent. Are you under thirteen and still wish to join? Please have your parents read our ", m("a", {
+    }, m("h1", null, "Rules & Regulations"), m("h2", null, "Age"), m("p", null, "It is ", m("em", null, "highly recommended"), " that you are thirteen years old or older to join this site, or have your parent's consent. Are you under thirteen and still wish to join? Please have your parents read our ", m("a", {
       href: "/parents"
     }, "Message for Parents and Teachers"), " and see what they have to say."), m("h2", null, "Behaviour"), m("p", null, "Any kind of disrespect or harassment in general is unwelcome here. Whether it be directed toward one of your peers or the game administration, through the ", m("em", null, "Forum"), ", ", m("em", null, "Chat Room"), " or through ", m("em", null, "PM"), " (Private Messages on the site). Out of character fights and quarrels will not be permitted on the boards. So if you have a problem with someone, please contact them outside of Shadowlack. Please read our ", m("a", {
       href: "/anti-harassment-policy"
